@@ -29,13 +29,13 @@ sr.reveal(".animate-fade-right", {
   delay: 300,
 });
 
-sr.reveal("#hero > div:first-child > div > h1", {
+sr.reveal("#hero > div:first-child > h1 > span", {
   origin: "bottom",
   distance: "20px",
   interval: 250,
 });
 
-sr.reveal("#hero > div:first-child > *:not(div)", {
+sr.reveal("#hero > div:first-child > *:not(h1)", {
   origin: "bottom",
   distance: "30px",
   interval: 300,
