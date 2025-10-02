@@ -18,6 +18,7 @@ export default defineConfig({
         main: path.resolve(__dirname, "index.html"),
         about: path.resolve(__dirname, "about.html"),
         google280a9c6712542421: path.resolve(__dirname, "google280a9c6712542421.html"),
+        404: path.resolve(__dirname, "404.html"),
       },
     },
   },

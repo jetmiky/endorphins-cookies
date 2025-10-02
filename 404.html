@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta
+      name="description"
+      content="Maaf, halaman yang Anda cari tidak ditemukan. Temukan kebahagiaan dalam setiap gigitan Endorphins Cookies!"
+    />
+    <link rel="canonical" href="https://endorphinscookies.netlify.app" />
+
+    <!-- Icons -->
+    <link rel="icon" type="image/svg+xml" href="/icons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png" />
+    <link rel="manifest" href="/icons/site.webmanifest" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Halaman Tidak Ditemukan - Endorphins Cookies" />
+    <meta
+      property="og:description"
+      content="Maaf, halaman yang Anda cari tidak ditemukan. Temukan kebahagiaan dalam setiap gigitan Endorphins Cookies!"
+    />
+    <meta property="og:url" content="https://endorphinscookies.netlify.app" />
+    <meta property="og:image" content="https://ik.imagekit.io/stfnxvrbzwa/endorphins-banner_C0c536UTVs.jpg" />
+    <meta property="fb:app_id" content="691857126993171" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Halaman Tidak Ditemukan - Endorphins Cookies" />
+    <meta
+      name="twitter:description"
+      content="Maaf, halaman yang Anda cari tidak ditemukan. Temukan kebahagiaan dalam setiap gigitan Endorphins Cookies!"
+    />
+    <meta name="twitter:image" content="https://ik.imagekit.io/stfnxvrbzwa/endorphins-banner_C0c536UTVs.jpg" />
+
+    <title>Halaman Tidak Ditemukan - Endorphins Cookies</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./src/style.css" rel="stylesheet" />
+
+    <style>
+      .animate-fade-in {
+        animation: fadeIn 1s ease-in-out;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .animate-float {
+        animation: float 3s ease-in-out infinite;
+      }
+
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+      }
+
+      .error-code {
+        font-size: clamp(6rem, 20vw, 12rem);
+        font-family: "Bebas Neue", Helvetica, sans-serif;
+        color: rgba(200, 161, 84, 0.3);
+        line-height: 1;
+        letter-spacing: -0.02em;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="bg-primary-50 flex items-center justify-between px-4 md:px-8 lg:px-40 py-7">
+      <div class="flex items-center justify-center">
+        <a href="/" class="font-logo text-primary-400 text-4xl leading-none tracking-wider">ENDORPHINS</a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button
+        id="mobile-menu-button"
+        class="md:hidden flex flex-col items-center justify-center w-8 h-8 space-y-1 focus:outline-none"
+        aria-label="Toggle menu"
+      >
+        <span class="block w-6 h-0.5 bg-black transition-transform duration-300"></span>
+        <span class="block w-6 h-0.5 bg-black transition-transform duration-300"></span>
+        <span class="block w-6 h-0.5 bg-black transition-transform duration-300"></span>
+      </button>
+
+      <!-- Navigation Menu -->
+      <nav
+        id="nav-menu"
+        class="hidden md:flex flex-col md:flex-row gap-6 md:gap-12 font-sans font-semibold text-xl absolute md:relative top-full left-0 right-0 bg-primary-50 md:bg-transparent p-4 md:p-0 shadow-lg md:shadow-none transition-all duration-300"
+      >
+        <a href="/" class="text-black text-lg">Beranda</a>
+      </nav>
+    </header>
+
+    <!-- 404 Content -->
+    <main class="flex flex-col items-center justify-center min-h-[60vh] px-4 md:px-40 py-16 text-center">
+      <div class="animate-fade-in">
+        <!-- Large 404 Text -->
+        <div class="error-code mb-8 animate-float">404</div>
+
+        <!-- Error Message -->
+        <div class="mb-12 max-w-2xl mx-auto">
+          <h1 class="font-sans font-semibold text-black text-3xl md:text-4xl mb-4">Oops! Halaman Tidak Ditemukan</h1>
+          <p class="font-sans text-base leading-normal text-textbody mb-8">
+            Maaf, sepertinya halaman yang Anda cari sudah habis dimakan oleh cookie monster! Tapi jangan khawatir, kami
+            punya banyak cookies lezat yang menunggu untuk Anda di beranda.
+          </p>
+        </div>
+
+        <!-- Cookie Image -->
+        <div class="mb-12 relative">
+          <div
+            class="bg-primary-100 rounded-full w-32 h-32 md:w-40 md:h-40 mx-auto flex items-center justify-center animate-float"
+          >
+            <img
+              src="./images/cookieshero.png"
+              alt="cookies"
+              class="w-24 h-24 md:w-32 md:h-32 object-cover animate-spin"
+              style="animation-duration: 8s"
+            />
+          </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="flex flex-col sm:flex-row gap-4 items-center justify-center">
+          <a
+            href="/"
+            class="bg-primary-400 hover:bg-primary-600 text-white px-8 py-3 rounded-full font-sans font-semibold text-base transition-all duration-300 hover:scale-105"
+          >
+            Kembali ke Beranda
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary-50 grid md:grid-cols-4 gap-12 px-4 py-12 md:px-20 md:py-20 min-h-[398px]">
+      <div class="col-span-2 flex flex-col gap-6 items-start">
+        <h3 class="font-logo text-primary-400 text-4xl leading-none tracking-wider">ENDORPHINS</h3>
+        <p class="font-sans text-base leading-normal text-textbody">
+          Dibuat dengan cinta dan bahan-bahan pilihan, pelukan hangat yang siap mencerahkan harimu.
+        </p>
+        <div class="flex flex-col gap-3 items-start justify-center w-full">
+          <div class="flex gap-3 items-center" data-name="Location">
+            <img src="./images/mappin.png" alt="location" class="w-5 h-5" />
+            <p class="font-sans text-base leading-normal text-textbody">Jln. Sudirman No. 138, Jakarta Pusat.</p>
+          </div>
+          <div class="flex gap-3 items-center" data-name="Phone">
+            <img src="./images/phone.png" alt="phone" class="w-5 h-5" />
+            <p class="font-sans text-base leading-normal text-textbody">Phone: (021) 123-4567</p>
+          </div>
+          <div class="flex gap-2 items-center" data-name="Email">
+            <img src="./images/envelopesimple.png" alt="email" class="w-5 h-5" />
+            <p class="font-sans text-base leading-normal text-textbody">Email: hello@endorphins.id</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col gap-5 md:gap-12 items-start">
+        <h3 class="font-sans text-xl md:text-2xl font-semibold text-black">OUR STORE</h3>
+        <div class="flex flex-col gap-3 items-start leading-normal">
+          <a href="#" class="font-sans text-base leading-normal text-textbody hover:text-black"> Jakarta </a>
+          <a href="#" class="font-sans text-base leading-normal text-textbody hover:text-black"> Bandung </a>
+          <a href="#" class="font-sans text-base leading-normal text-textbody hover:text-black"> Surabaya </a>
+          <a href="#" class="font-sans text-base leading-normal text-textbody hover:text-black"> Bali </a>
+        </div>
+      </div>
+      <div class="flex flex-col gap-5 md:gap-12 items-start">
+        <h3 class="font-sans text-xl md:text-2xl font-semibold text-black">SOCIAL MEDIA</h3>
+        <div class="flex flex-col gap-3 items-start leading-normal">
+          <a href="#" class="font-sans text-base leading-normal text-textbody hover:text-black"> Instagram </a>
+          <a href="#" class="font-sans text-base leading-normal text-textbody hover:text-black"> Tiktok </a>
+          <a href="#" class="font-sans text-base leading-normal text-textbody hover:text-black"> Facebook </a>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+    <script>
+      // Mobile menu toggle
+      const mobileMenuButton = document.getElementById("mobile-menu-button");
+      const navMenu = document.getElementById("nav-menu");
+
+      function toggleMenu() {
+        navMenu.classList.toggle("hidden");
+        navMenu.classList.toggle("flex");
+
+        // Animate hamburger to X
+        const spans = mobileMenuButton.querySelectorAll("span");
+        if (navMenu.classList.contains("flex")) {
+          spans[0].style.transform = "rotate(45deg) translate(5px, 5px)";
+          spans[1].style.opacity = "0";
+          spans[2].style.transform = "rotate(-45deg) translate(7px, -6px)";
+        } else {
+          spans[0].style.transform = "none";
+          spans[1].style.opacity = "1";
+          spans[2].style.transform = "none";
+        }
+      }
+
+      mobileMenuButton.addEventListener("click", toggleMenu);
+
+      // Close menu when clicking on a link
+      navMenu.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+          if (window.innerWidth < 768) {
+            toggleMenu();
+          }
+        });
+      });
+
+      // Reset menu on window resize
+      window.addEventListener("resize", () => {
+        if (window.innerWidth >= 768) {
+          navMenu.classList.remove("flex");
+          navMenu.classList.add("hidden");
+          const spans = mobileMenuButton.querySelectorAll("span");
+          spans[0].style.transform = "none";
+          spans[1].style.opacity = "1";
+          spans[2].style.transform = "none";
+        }
+      });
+    </script>
+  </body>
+</html>
