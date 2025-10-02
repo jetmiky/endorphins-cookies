@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="id">
   <head>
     <meta charset="utf-8" />
@@ -71,34 +71,43 @@
     </header>
 
     <!-- Hero Section -->
-    <section id="hero" class="flex items-center justify-center px-40 py-12">
+    <section id="hero" class="flex flex-col md:flex-row gap-10 items-center justify-center px-10 md:px-40 py-12">
       <div class="flex flex-col gap-10 items-start">
-        <div class="flex flex-col text-8xl leading-none">
+        <div class="flex flex-col text-6xl md:text-7xl leading-none">
           <span class="font-semibold text-primary-400">Perfect cookies,</span>
           <span class="font-semibold text-black">Perfect day.</span>
         </div>
-        <p class="font-sans text-base leading-normal text-textbody w-[524px]">
+        <p class="font-sans text-base leading-normal text-textbody md:w-10/12">
           Dibuat dengan cinta dan bahan-bahan pilihan, setiap gigitan Endorphins adalah pelukan hangat yang siap
           mencerahkan harimu. Feel the happiness!
         </p>
-        <a href="#cookies" class="bg-primary-50 flex items-center pl-6 pr-2 py-2 rounded-full">
-          <span class="text-black text-base mr-4">View our cookies</span>
-          <div class="bg-primary-600 w-12 h-12 rounded-full flex items-center justify-center">
-            <img src="./images/frame-201.svg" alt="arrow" class="w-6 h-6 rotate-180" />
-          </div>
-        </a>
+        <aside class="flex flex-col gap-3">
+          <a href="#cookies" class="bg-primary-50 flex items-center pl-6 pr-2 py-2 rounded-full">
+            <span class="text-black text-base mr-4">View Our Cookies</span>
+            <div class="bg-primary-600 w-12 h-12 rounded-full flex items-center justify-center">
+              <img src="./images/frame-201.svg" alt="arrow" class="w-6 h-6 rotate-180" />
+            </div>
+          </a>
+          <a
+            href="https://www.figma.com/design/qVnnVpDCl4YVqwjeDHSRZr/LA79-Web-Solutions---Endorphins?node-id=0-1&t=frOAwMR9qoHSRS4g-1"
+            target="_blank"
+            class="bg-primary-400 hover:bg-primary-600 text-center p-4 rounded-full text-white text-base"
+          >
+            View Figma Design
+          </a>
+        </aside>
       </div>
-      <div class="relative ml-12 rounded-full p-4 border-2 border-dashed border-primary-400">
-        <div class="bg-primary-400 rounded-full w-[467px] h-[608px]"></div>
-        <div class="absolute -left-20 top-[74px] w-[546px] h-[551px]">
+      <div class="relative rounded-full p-4 border-2 border-dashed border-primary-400">
+        <div class="bg-primary-400 rounded-full w-60 md:w-[467px] h-[360px] md:h-[608px]"></div>
+        <div class="absolute left-0 md:-left-20 top-[74px] w-[320px] md:w-[546px] h-[320px] md:h-[551px]">
           <img src="./images/cookieshero.png" alt="cookies" class="w-full h-full object-cover animate-spin" />
         </div>
       </div>
     </section>
 
     <!-- Packages Section -->
-    <section class="flex flex-col gap-12 items-center px-40 py-8">
-      <div id="js-usp" class="flex gap-4 items-start w-full">
+    <section class="md:flex flex-col gap-12 items-center px-4 md:px-40 py-8">
+      <div id="js-usp" class="md:flex gap-4 items-start w-full">
         <div
           class="bg-white flex flex-col gap-4 items-start justify-end p-8 rounded-3xl relative border border-primary-100"
         >
@@ -142,8 +151,8 @@
     </section>
 
     <!-- About Section -->
-    <section class="flex gap-12 items-center justify-center px-60 py-16">
-      <div class="relative h-[640px] min-w-[464px] animate-fade-right">
+    <section class="flex flex-col md:flex-row gap-12 items-center justify-center px-4 md:px-60 py-16">
+      <div class="relative h-[480px] md:h-[640px] min-w-full md:min-w-[480px] animate-fade-right">
         <img
           src="./images/rectangle-21.png"
           alt="about"
@@ -173,14 +182,14 @@
     </section>
 
     <!-- Popular Cookies Section -->
-    <section id="cookies" class="flex flex-col gap-12 items-start px-40 py-16">
+    <section id="cookies" class="flex flex-col gap-12 items-start px-4 md:px-40 py-16">
       <div class="flex flex-col gap-2 items-center justify-center text-center w-full">
         <div class="font-sans font-semibold text-black text-4xl">Varian Cookies Favorit</div>
         <p class="font-sans text-base leading-normal text-textbody w-full">
           Cookies yang selalu berhasil membuat semua orang tersenyum.
         </p>
       </div>
-      <div id="js-cookies" class="grid grid-cols-3 gap-6 items-start justify-center w-full">
+      <div id="js-cookies" class="grid md:grid-cols-3 gap-6 items-start justify-center w-full">
         <!-- Cookie Cards -->
         <div
           class="bg-white flex flex-col gap-4 items-start justify-center p-8 rounded-3xl relative border border-primary-100 animate-fade-up"
@@ -256,14 +265,14 @@
     </section>
 
     <!-- Packages Section -->
-    <section class="flex flex-col gap-12 items-center px-40 py-8">
+    <section class="flex flex-col gap-12 items-center px-4 md:px-40 py-8">
       <div class="flex flex-col gap-2 items-center justify-center text-center w-full">
         <div class="font-sans font-semibold text-black text-4xl">Hampers Package</div>
         <p class="font-sans text-base leading-normal text-textbody w-full">
           Kirim Kebahagiaan dengan Hampers Endorphins.
         </p>
       </div>
-      <div id="js-hampers" class="flex gap-4 items-start w-full">
+      <div id="js-hampers" class="flex flex-col md:flex-row gap-4 items-start w-full">
         <div
           class="bg-white flex flex-col gap-4 items-start justify-end p-8 rounded-3xl relative border border-primary-100"
         >
@@ -320,10 +329,10 @@
     </section>
 
     <!-- Orders Section -->
-    <section class="flex flex-col gap-10 items-center px-40 pt-16 pb-0">
-      <div class="flex gap-12 items-center px-[72px] w-[1258px]">
+    <section class="flex gap-10 items-center px-4 md:px-40 pt-16 pb-0">
+      <div class="flex flex-col md:flex-row gap-12 items-center md:px-[72px]">
         <div class="flex flex-col gap-4 items-start">
-          <div class="font-sans font-semibold text-black text-4xl text-nowrap">Pesan Online? Tentu Bisa!</div>
+          <div class="font-sans font-semibold text-black text-xl md:text-4xl">Pesan Online? Tentu Bisa!</div>
           <p class="font-sans text-base leading-normal text-textbody">
             Kebahagiaan kini hanya sejauh beberapa klik saja. Pesan Endorphins favoritmu melalui platform online dan
             nikmati di mana pun kamu berada.<br /><br />
@@ -331,18 +340,20 @@
           </p>
         </div>
         <div class="flex items-center">
-          <img src="./images/ellipse-43.png" alt="ellipse" class="w-[400px] h-[400px]" />
+          <img src="./images/ellipse-43.png" alt="ellipse" class="md:w-[400px] md:h-[400px]" />
         </div>
       </div>
     </section>
 
     <!-- Information Section -->
-    <section class="flex flex-col items-center px-40 py-16">
-      <div class="bg-white flex items-center px-4 py-6 rounded-3xl relative border border-primary-100 w-[1258px]">
+    <section class="flex flex-col items-center px-4 md:px-40 py-16">
+      <div
+        class="bg-white flex flex-col md:flex-row gap-6 md:gap-12 items-center px-4 md:px-24 py-6 rounded-3xl relative border border-primary-100"
+      >
         <div class="flex flex-col gap-4 items-center justify-center grow h-[124px]">
           <img src="./images/pin-drop-fill1-wght400-grad0-opsz48-1.svg" alt="pin" class="w-10 h-10" />
           <div class="flex flex-col items-center leading-normal text-center w-full">
-            <p class="font-sans font-semibold text-black text-2xl">Jakarta Pusat</p>
+            <p class="font-sans font-semibold text-black text-xl">Jakarta Pusat</p>
             <p class="font-sans text-base leading-normal text-textbody">Jln. Sudirman No. 183</p>
           </div>
         </div>
@@ -354,7 +365,7 @@
         <div class="flex flex-col gap-4 items-center justify-center grow h-[124px]">
           <img src="./images/schedule-fill1-wght400-grad0-opsz48-1.svg" alt="schedule" class="w-10 h-10" />
           <div class="flex flex-col items-center leading-normal text-center w-full">
-            <p class="font-sans font-semibold text-black text-2xl">10.00-21.00 WIB</p>
+            <p class="font-sans font-semibold text-black text-xl">10.00-21.00 WIB</p>
             <p class="font-sans text-base leading-normal text-textbody">Our outlets ready to serve you!</p>
           </div>
         </div>
@@ -366,7 +377,7 @@
         <div class="flex flex-col gap-4 items-center justify-center grow h-[124px]">
           <img src="./images/android-dialer-fill1-wght400-grad0-opsz48-1.svg" alt="phone" class="w-10 h-10" />
           <div class="flex flex-col items-center leading-normal text-center w-full">
-            <p class="font-sans font-semibold text-black text-2xl">0812-1800-9691</p>
+            <p class="font-sans font-semibold text-black text-xl">0812-1800-9691</p>
             <p class="font-sans text-base leading-normal text-textbody">Online orders hotline</p>
           </div>
         </div>
@@ -374,16 +385,16 @@
     </section>
 
     <!-- Testimonial Section -->
-    <section class="bg-primary-50 flex flex-col gap-12 items-center px-40 py-16">
-      <div class="font-sans font-semibold text-black text-4xl text-nowrap">Kata Mereka tentang Kami</div>
+    <section class="bg-primary-50 flex flex-col gap-12 items-center px-4 md:px-40 py-16">
+      <div class="font-sans font-semibold text-black text-2xl md:text-4xl text-nowrap">Kata Mereka tentang Kami</div>
       <div class="flex gap-10 items-center">
-        <img src="./images/frame-201.svg" alt="arrow" class="w-10 h-10" />
-        <div class="flex gap-10 items-start w-[1072px]">
+        <!-- <img src="./images/frame-201.svg" alt="arrow" class="w-10 h-10" /> -->
+        <div class="flex flex-col md:flex-row gap-10 items-start">
           <div class="bg-white flex flex-col gap-6 items-end justify-center p-10 rounded-lg">
             <div class="flex gap-5 items-center w-full">
               <img src="./images/image-11.png" alt="Sandiaga Uno" class="w-[72px] h-[72px] rounded-full object-cover" />
               <div class="flex flex-col gap-2 items-start leading-normal text-nowrap">
-                <p class="font-sans text-2xl font-semibold text-black">Sandiaga Uno</p>
+                <p class="font-sans text-lg md:text-2xl font-semibold text-black">Sandiaga Uno</p>
                 <p class="font-sans text-base leading-normal text-black">Entrepreneur</p>
               </div>
             </div>
@@ -403,7 +414,7 @@
                 class="w-[72px] h-[72px] rounded-full object-cover"
               />
               <div class="flex flex-col gap-2 items-start leading-normal text-nowrap">
-                <p class="font-sans text-2xl font-semibold text-black">Gibran Rakabuming</p>
+                <p class="font-sans text-lg md:text-2xl font-semibold text-black">Gibran Rakabuming</p>
                 <p class="font-sans text-base leading-normal text-black">Vice President</p>
               </div>
             </div>
@@ -416,33 +427,41 @@
             </div>
           </div>
         </div>
-        <img src="./images/frame-206.svg" alt="arrow" class="w-10 h-10 rotate-180" />
+        <!-- <img src="./images/frame-206.svg" alt="arrow" class="w-10 h-10 rotate-180" /> -->
       </div>
-      <div class="w-[56px] h-2" data-name="Space">
+      <!-- <div class="w-[56px] h-2" data-name="Space">
         <img src="./images/space.svg" alt="dots" class="w-full h-full" />
-      </div>
+      </div> -->
     </section>
 
     <!-- Subscription Section -->
-    <section class="flex flex-col gap-8 items-center px-40 py-20">
+    <section class="flex flex-col gap-8 items-center px-4 md:px-40 py-20">
       <div
-        class="bg-white flex flex-col gap-8 items-center justify-center p-12 rounded-lg relative border border-primary-100 w-[942px]"
+        class="bg-white flex flex-col gap-8 items-center justify-center px-4 py-12 md:px-12 md:py-12 rounded-lg relative border border-primary-100"
       >
-        <div class="flex flex-col gap-2 items-center text-nowrap">
-          <div class="font-sans font-semibold text-black text-4xl">Dapatkan Info & Promo Spesial!</div>
+        <div class="flex flex-col gap-4 items-center">
+          <div class="font-sans font-semibold text-black text-2xl md:text-4xl text-center">
+            Dapatkan Info & Promo Spesial!
+          </div>
           <p class="font-sans text-base leading-normal text-textbody text-center">
             Jadilah yang pertama tahu tentang varian baru dan penawaran eksklusif dari kami.
           </p>
         </div>
-        <form id="subscription-form" class="bg-primary-50 flex items-center pl-6 pr-2 py-2 rounded-full w-[481px]">
+        <form
+          id="subscription-form"
+          class="flex flex-col md:flex-row items-center pr-2 py-2 gap-2 w-full md:w-8/12 md:rounded-full md:bg-primary-50"
+        >
           <input
             name="email"
             type="email"
             placeholder="Masukkan alamat email-mu"
-            class="w-full focus:outline-0"
+            class="w-full focus:outline-0 bg-primary-50 rounded-full px-4 py-3 text-center md:text-left"
             required
           />
-          <button type="submit" class="bg-primary-600 hover:bg-primary-700 text-white rounded-3xl px-4 py-2">
+          <button
+            type="submit"
+            class="bg-primary-600 hover:bg-primary-700 text-white rounded-3xl px-4 py-2 w-full md:w-min"
+          >
             Subscribe
           </button>
         </form>
@@ -450,10 +469,10 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-primary-50 grid grid-cols-4 gap-12 p-20 h-[398px]">
+    <footer class="bg-primary-50 grid md:grid-cols-4 gap-12 px-4 py-12 md:px-20 md:py-20 min-h-[398px]">
       <div class="col-span-2 flex flex-col gap-6 items-start">
         <p class="font-logo text-primary-400 text-4xl leading-none tracking-wider">ENDORPHINS</p>
-        <p class="font-sans text-base leading-normal text-textbody w-[437px]">
+        <p class="font-sans text-base leading-normal text-textbody">
           Dibuat dengan cinta dan bahan-bahan pilihan, pelukan hangat yang siap mencerahkan harimu.
         </p>
         <div class="flex flex-col gap-3 items-start justify-center w-full">
@@ -471,8 +490,8 @@
           </div>
         </div>
       </div>
-      <div class="flex flex-col gap-12 items-start">
-        <p class="font-sans text-2xl font-semibold text-black">OUR STORE</p>
+      <div class="flex flex-col gap-5 md:gap-12 items-start">
+        <p class="font-sans text-xl md:text-2xl font-semibold text-black">OUR STORE</p>
         <div class="flex flex-col gap-3 items-start leading-normal">
           <a href="#" class="font-sans text-base leading-normal text-textbody hover:text-black"> Jakarta </a>
           <a href="#" class="font-sans text-base leading-normal text-textbody hover:text-black"> Bandung </a>
@@ -480,8 +499,8 @@
           <a href="#" class="font-sans text-base leading-normal text-textbody hover:text-black"> Bali </a>
         </div>
       </div>
-      <div class="flex flex-col gap-12 items-start">
-        <p class="font-sans text-2xl font-semibold text-black">SOCIAL MEDIA</p>
+      <div class="flex flex-col gap-5 md:gap-12 items-start">
+        <p class="font-sans text-xl md:text-2xl font-semibold text-black">SOCIAL MEDIA</p>
         <div class="flex flex-col gap-3 items-start leading-normal">
           <a href="#" class="font-sans text-base leading-normal text-textbody hover:text-black"> Instagram </a>
           <a href="#" class="font-sans text-base leading-normal text-textbody hover:text-black"> Tiktok </a>

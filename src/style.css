@@ -27,7 +27,7 @@
   }
 
   body {
-    @apply w-screen overflow-x-hidden;
+    @apply max-w-screen overflow-x-hidden;
   }
 
   a {
