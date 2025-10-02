@@ -29,7 +29,7 @@ sr.reveal(".animate-fade-right", {
   delay: 300,
 });
 
-sr.reveal("#hero > div:first-child > div > span", {
+sr.reveal("#hero > div:first-child > div > h1", {
   origin: "bottom",
   distance: "20px",
   interval: 250,
