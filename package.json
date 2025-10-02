@@ -1,0 +1,21 @@
+{
+  "name": "endorphins",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.1",
+    "vite": "^7.1.7"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.13",
+    "lenis": "^1.3.11",
+    "scrollreveal": "^4.0.9",
+    "tailwindcss": "^4.1.13"
+  }
+}

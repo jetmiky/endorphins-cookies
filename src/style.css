@@ -1,0 +1,132 @@
+@import "tailwindcss";
+@import "lenis/dist/lenis.css";
+
+@theme {
+  --text-base: 16px;
+
+  --color-black: rgba(39, 39, 39, 1);
+  --color-white: rgba(255, 255, 255, 1);
+  --color-textbody: rgba(75, 47, 46, 1);
+  --color-body: rgba(75, 47, 46, 1);
+  --color-textdisabled: rgba(156, 139, 138, 1);
+  --color-style: rgba(148, 82, 57, 1);
+
+  --color-primary-50: rgba(249, 246, 237, 1);
+  --color-primary-100: rgba(240, 234, 209, 1);
+  --color-primary-400: rgba(200, 161, 84, 1);
+  --color-primary-600: rgba(156, 108, 50, 1);
+  --color-primary-700: rgba(125, 80, 43, 1);
+
+  --font-sans: "Poppins", Helvetica;
+  --font-logo: "Bebas Neue", Helvetica;
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply w-screen overflow-x-hidden;
+  }
+
+  a {
+    @apply transition-colors duration-300 ease-in-out;
+  }
+
+  button {
+    @apply cursor-pointer transition-all duration-300 ease-in-out;
+  }
+}
+
+@layer components {
+  .logo {
+    @apply font-logo text-primary-400 text-[2rem];
+    letter-spacing: 1.8px;
+    line-height: normal;
+  }
+
+  .heading {
+    @apply font-sans font-semibold text-black text-3xl md:text-4xl;
+  }
+
+  .heading-small {
+    @apply font-sans font-semibold text-[20px] md:text-2xl;
+  }
+
+  .hero-text {
+    @apply font-sans font-semibold leading-[88px] not-italic;
+    font-size: 80px;
+  }
+
+  .hero-text span {
+    display: block;
+  }
+
+  .hero-text .primary-text {
+    @apply text-primary-400;
+  }
+
+  .hero-text .black-text {
+    @apply text-black;
+  }
+
+  .body-text {
+    @apply font-sans leading-normal not-italic text-body;
+  }
+
+  .button {
+    @apply bg-primary-50 flex items-center pl-6 pr-2 py-2 rounded-[48px];
+  }
+
+  .button-text {
+    @apply font-sans grow text-black text-base leading-0;
+  }
+
+  .button-icon {
+    @apply bg-primary-600 h-[45px] w-[44px] rounded-[40px] relative justify-center;
+    display: flex;
+    align-items: center;
+  }
+
+  .card {
+    @apply bg-white flex flex-col gap-4 items-start justify-center p-8 relative rounded-[48px];
+  }
+
+  .card::before {
+    content: "";
+    @apply absolute border border-primary-100 border-solid inset-0 pointer-events-none rounded-[48px];
+  }
+
+  .card-image {
+    @apply h-[288px] pointer-events-none relative rounded-[32px] w-full;
+  }
+
+  .card-image::before {
+    content: "";
+    @apply absolute border border-primary-50 border-solid inset-0 pointer-events-none rounded-[32px];
+  }
+
+  .card-title {
+    @apply font-sans font-semibold text-black text-xl;
+  }
+
+  .card-description {
+    @apply font-sans leading-normal text-body text-base;
+  }
+
+  /* Mobile menu styles */
+  .rotate-45 {
+    transform: rotate(45deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 240s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
