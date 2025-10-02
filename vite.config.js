@@ -10,6 +10,7 @@ export default defineConfig({
       input: {
         main: path.resolve(__dirname, "index.html"),
         about: path.resolve(__dirname, "about.html"),
+        google280a9c6712542421: path.resolve(__dirname, "google280a9c6712542421.html"),
       },
     },
   },
