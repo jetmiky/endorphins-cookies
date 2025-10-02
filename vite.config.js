@@ -1,11 +1,13 @@
 import path from "node:path";
 
 import { defineConfig } from "vite";
+import netlify from "@netlify/vite-plugin";
 import tailwindcss from "@tailwindcss/vite";
 import sitemap from "vite-plugin-sitemap";
 
 export default defineConfig({
   plugins: [
+    netlify(),
     tailwindcss(),
     sitemap({
       hostname: "https://endorphinscookies.netlify.app",
