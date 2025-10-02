@@ -10,7 +10,8 @@
   },
   "devDependencies": {
     "@playwright/test": "^1.55.1",
-    "vite": "^7.1.7"
+    "vite": "^7.1.7",
+    "vite-plugin-sitemap": "^0.8.2"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.13",
