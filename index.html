@@ -106,9 +106,9 @@
             </div>
           </a>
           <a
-            href="https://www.figma.com/design/qVnnVpDCl4YVqwjeDHSRZr/LA79-Web-Solutions---Endorphins?node-id=0-1&t=frOAwMR9qoHSRS4g-1"
+            href="https://s.id/figma-endorphins"
             target="_blank"
-            rel="noreferrer"
+            rel="noreferrer noopener"
             class="bg-primary-400 hover:bg-primary-600 text-center p-4 rounded-full text-white text-base"
           >
             View Figma Design
@@ -118,7 +118,19 @@
       <div class="relative rounded-full p-4 border-2 border-dashed border-primary-400">
         <div class="bg-primary-400 rounded-full w-60 md:w-[467px] h-[360px] md:h-[608px]"></div>
         <div class="absolute left-0 md:-left-20 top-[74px] w-[320px] md:w-[546px] h-[320px] md:h-[551px]">
-          <img src="./images/cookieshero.png" alt="cookies" class="w-full h-full object-cover animate-spin" />
+          <!-- <img src="./images/cookieshero.png" alt="cookies" class="w-full h-full object-cover animate-spin" /> -->
+          <img
+            sizes="(max-width: 600px) 320px, 546px"
+            srcset="
+              ./images/cookieshero.png?nf_resize=fit&w=320   320w,
+              ./images/cookieshero.png?nf_resize=fit&w=640   640w,
+              ./images/cookieshero.png?nf_resize=fit&w=546   546w,
+              ./images/cookieshero.png?nf_resize=fit&w=1092 1092w
+            "
+            src="./images/cookieshero.png?nf_resize=fit&w=546"
+            alt="Endorphins Cookies"
+            loading="eager"
+          />
         </div>
       </div>
     </section>
