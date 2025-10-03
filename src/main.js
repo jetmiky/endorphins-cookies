@@ -64,9 +64,21 @@ sr.reveal("#js-hampers > div", {
 });
 
 // Subscription form
-document.getElementById("subscription-form").addEventListener("submit", function (event) {
-  event.preventDefault();
-  window.alert("Terima kasih!");
+const subscriptionForm = document.getElementById("subscription-form");
+if (subscriptionForm) {
+  subscriptionForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+    window.alert("Terima kasih!");
 
-  this.reset();
-});
+    this.reset();
+  });
+}
+
+// Disclaimer indicator
+const disclaimerElement = document.getElementById("js-disclaimer");
+if (disclaimerElement) {
+  const btn = disclaimerElement.querySelector("button");
+  btn.addEventListener("click", () => {
+    disclaimerElement.style.right = "-100vw";
+  });
+}
