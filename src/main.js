@@ -79,6 +79,6 @@ const disclaimerElement = document.getElementById("js-disclaimer");
 if (disclaimerElement) {
   const btn = disclaimerElement.querySelector("button");
   btn.addEventListener("click", () => {
-    disclaimerElement.style.right = "-100vw";
+    disclaimerElement.style.display = "none";
   });
 }

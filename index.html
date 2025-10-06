@@ -63,7 +63,7 @@
     <!-- Disclaimer Indicator -->
     <aside
       id="js-disclaimer"
-      class="fixed max-w-96 bottom-10 right-10 px-4 md:py-4 md:px-8 z-50 bg-primary-50 rounded-xl shadow-xl transition-all duration-300 ease-in-out"
+      class="fixed md:max-w-96 bottom-0 md:bottom-10 md:right-10 p-4 md:px-8 z-50 bg-primary-50 rounded-xl shadow-xl transition-all duration-300 ease-in-out"
     >
       <h6 class="font-semibold text-primary-600 text-base mb-2">Disclaimer</h6>
       <p class="text-xs mb-4">
@@ -234,29 +234,30 @@
         <div aria-hidden="true" class="absolute border border-primary-100 border-solid inset-0 rounded-[240px]"></div>
       </div>
 
-      <div class="flex flex-col gap-8 items-start animate-fade-left">
-        <h2 class="font-sans font-semibold text-black text-3xl">Cerita di Balik Setiap Gigitan ...</h2>
-        <div class="font-sans text-base leading-normal text-textbody">
-          <p class="mb-0">
+      <div class="gap-8 animate-fade-left">
+        <h2 class="font-sans font-semibold text-black text-2xl md:text-3xl mb-4">Cerita di Balik Setiap Gigitan ...</h2>
+        <div class="font-sans text-base leading-normal text-textbody mb-4">
+          <p class="mb-4">
             Bagi kami, cookies bukan sekadar resep. Cookies merupakan misi kami untuk menyebarkan kebahagiaan. Setiap
             adonan kami racik dengan bahan-bahan terbaik dan satu kebun cinta, karena kami percaya satu gigitan manis
             bisa mengubah harimu menjadi lebih baik.
           </p>
-          <p class="mb-0">&nbsp;</p>
           <p>Penasaran cerita di balik setiap gigitan? Cari tahu tentang kami!</p>
         </div>
-        <a href="/about.html" class="bg-primary-50 flex items-center pl-6 pr-2 py-2 rounded-full">
-          <span class="text-black text-base mr-4"> Tentang Kami </span>
-          <div class="bg-primary-600 w-12 h-12 rounded-full flex items-center justify-center">
-            <img
-              src="./images/frame-201.svg?nf_resize=fit&w=24"
-              alt="arrow"
-              class="w-6 h-6 rotate-180"
-              loading="lazy"
-              decoding="async"
-            />
-          </div>
-        </a>
+        <div class="flex">
+          <a href="/about.html" class="bg-primary-50 flex items-center pl-6 pr-2 py-2 rounded-full">
+            <span class="text-black text-base mr-4">Tentang Kami</span>
+            <div class="bg-primary-600 w-12 h-12 rounded-full flex items-center justify-center">
+              <img
+                src="./images/frame-201.svg?nf_resize=fit&w=24"
+                alt="arrow"
+                class="w-6 h-6 rotate-180"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+          </a>
+        </div>
       </div>
     </section>
 
