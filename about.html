@@ -28,22 +28,52 @@
     <link href="/src/style.css" rel="stylesheet" />
   </head>
   <body>
+    <!-- Disclaimer Indicator -->
+    <aside
+      id="js-disclaimer"
+      class="fixed md:max-w-96 bottom-0 md:bottom-10 md:right-10 p-4 md:px-8 z-50 bg-primary-50 rounded-xl shadow-xl transition-all duration-300 ease-in-out"
+    >
+      <h6 class="font-semibold text-primary-600 text-base mb-2">Disclaimer</h6>
+      <p class="text-xs mb-4">
+        Situs web ini merupakan SEO testing course LA79 Business Web Solutions - Universitas Bina Nusantara, bukan resmi
+        milik Endorphins Cookies.
+      </p>
+      <button class="bg-primary-400 hover:bg-primary-700 text-white py-2 px-4 rounded-lg text-xs">Tutup</button>
+    </aside>
+
     <!-- Header -->
-    <header class="bg-primary-50 flex items-center justify-between px-40 py-7" data-node-id="66:3">
-      <div class="flex items-center justify-center" data-node-id="66:4">
-        <a href="/" class="font-logo text-primary-400 text-4xl leading-none tracking-wider" data-node-id="66:5">
-          ENDORPHINS
-        </a>
+    <header class="bg-primary-50 flex items-center justify-between px-4 md:px-8 lg:px-40 py-7">
+      <div class="flex items-center justify-center">
+        <a href="/" class="font-logo text-primary-400 text-4xl leading-none tracking-wider">ENDORPHINS</a>
       </div>
-      <nav class="flex gap-12 font-sans font-semibold text-xl" data-node-id="66:6">
-        <a href="/" class="text-textdisabled text-lg hover:text-black" data-node-id="66:7">Beranda</a>
-        <a href="#" class="text-black text-lg" data-node-id="66:8">Tentang Kami</a>
+
+      <!-- Mobile Menu Button -->
+      <button
+        id="mobile-menu-button"
+        class="md:hidden flex flex-col items-center justify-center w-8 h-8 space-y-1 focus:outline-none"
+        aria-label="Toggle menu"
+      >
+        <span class="block w-6 h-0.5 bg-black transition-transform duration-300"></span>
+        <span class="block w-6 h-0.5 bg-black transition-transform duration-300"></span>
+        <span class="block w-6 h-0.5 bg-black transition-transform duration-300"></span>
+      </button>
+
+      <!-- Navigation Menu -->
+      <nav
+        id="nav-menu"
+        class="hidden md:flex flex-col md:flex-row gap-6 md:gap-12 font-sans font-semibold text-xl absolute md:relative top-full left-0 right-0 bg-primary-50 md:bg-transparent p-4 md:p-0 shadow-lg md:shadow-none transition-all duration-300"
+      >
+        <a href="/" class="text-textdisabled text-lg hover:text-black">Beranda</a>
+        <a href="#" class="text-black text-lg"> Tentang Kami </a>
       </nav>
     </header>
 
     <!-- About Section -->
-    <section class="flex gap-20 items-center justify-center px-80 py-16" data-node-id="66:38">
-      <div class="relative h-[640px] w-[464px] rounded-[240px]" data-node-id="66:39">
+    <section
+      class="grid lg:grid-cols-2 gap-20 items-center justify-center px-8 md:px-16 lg:px-24 xl:px-40 py-16"
+      data-node-id="66:38"
+    >
+      <div class="relative h-[320px] md:h-[480px] xl:h-[640px] rounded-[240px] animate-fade-right" data-node-id="66:39">
         <img
           src="./images/rectangle-21.png"
           alt="about"
@@ -51,7 +81,7 @@
         />
         <div aria-hidden="true" class="absolute border border-primary-100 border-solid inset-0 rounded-[240px]"></div>
       </div>
-      <div class="flex flex-col gap-8 items-start basis-0 grow min-w-px" data-node-id="66:40">
+      <div class="flex flex-col gap-8 items-start basis-0 grow min-w-px animate-fade-left" data-node-id="66:40">
         <div class="flex flex-col font-sans font-semibold text-black text-[40px] w-full" data-node-id="66:41">
           <p class="leading-normal">
             Satu Gigitan,
@@ -81,27 +111,42 @@
     </section>
 
     <!-- Mission Section -->
-    <section class="bg-primary-50 flex flex-col gap-6 items-center px-40 py-16" data-node-id="66:233">
-      <div class="flex flex-col font-sans font-semibold text-primary-700 text-[40px] text-nowrap" data-node-id="66:235">
-        <p class="leading-normal whitespace-pre">Misi Kami</p>
+    <section
+      class="bg-primary-50 flex flex-col gap-6 items-center px-8 md:px-20 lg:px-24 xl:px-40 py-16"
+      data-node-id="66:233"
+    >
+      <div
+        class="flex flex-col font-sans font-semibold text-primary-700 text-3xl md:text-4xl xl:text-5xl"
+        data-node-id="66:235"
+      >
+        <p class="leading-normal whitespace-pre animate-fade-up">Misi Kami</p>
       </div>
-      <p class="font-sans text-base leading-normal text-textbody text-center w-[595px]" data-node-id="66:236">
+      <p
+        class="font-sans text-base leading-normal text-textbody text-center lg:px-24 xl:px-48 animate-fade-up"
+        data-node-id="66:236"
+      >
         Menyebarkan kebahagiaan dan menciptakan momen-momen manis tak terlupakan melalui cookies berkualitas premium
         yang dibuat dengan penuh cinta dan integritas.
       </p>
     </section>
 
     <!-- Team Section -->
-    <section class="flex flex-col gap-12 items-center px-40 py-16" data-node-id="66:207">
-      <div class="flex flex-col gap-2 items-center justify-center text-center w-full" data-node-id="66:208">
-        <div class="flex flex-col font-sans font-semibold text-black text-[40px] w-full" data-node-id="66:209">
+    <section class="flex flex-col gap-12 items-center px-4 md:px-8 lg:px-16 xl:px-40 py-16" data-node-id="66:207">
+      <div
+        class="flex flex-col gap-2 items-center justify-center text-center w-full animate-fade-up"
+        data-node-id="66:208"
+      >
+        <div
+          class="flex flex-col font-sans font-semibold text-black text-3xl md:text-4xl xl:text-5xl w-full"
+          data-node-id="66:209"
+        >
           <p class="leading-normal">Tim di balik Adonan Cookies</p>
         </div>
         <p class="font-sans text-base leading-normal text-textbody w-full" data-node-id="66:210">
           Orang-orang yang berdedikasi untuk menyajikan senyuman di setiap kotak Endorphins.
         </p>
       </div>
-      <div class="flex gap-4 items-start w-full" data-node-id="66:211">
+      <div id="js-members" class="grid md:grid-cols-2 xl:grid-cols-3 gap-4 items-start w-full" data-node-id="66:211">
         <div
           class="bg-white flex flex-col gap-4 items-start justify-end px-8 py-6 relative rounded-[48px] grow basis-0 min-w-px border border-primary-100"
           data-node-id="66:217"
@@ -112,11 +157,8 @@
               class="absolute border border-primary-50 border-solid inset-0 pointer-events-none rounded-[32px]"
             ></div>
           </div>
-          <div
-            class="flex flex-col font-sans font-semibold gap-1 items-start leading-normal w-full"
-            data-node-id="72:285"
-          >
-            <p class="text-black text-xl md:text-2xl w-full" data-node-id="66:220">Riyan Duwihadi S.</p>
+          <div class="flex flex-col gap-1 items-start leading-normal w-full" data-node-id="72:285">
+            <p class="text-black font-semibold text-xl md:text-2xl w-full" data-node-id="66:220">Riyan Duwihadi S.</p>
             <p class="text-textbody text-lg md:text-xl w-full" data-node-id="72:284">Chief Executive Officer</p>
           </div>
         </div>
@@ -144,11 +186,8 @@
               />
             </div>
           </div>
-          <div
-            class="flex flex-col font-sans font-semibold gap-1 items-start leading-normal w-full"
-            data-node-id="72:288"
-          >
-            <p class="text-black text-xl md:text-2xl w-full" data-node-id="72:289">Bima Jatmiko A.</p>
+          <div class="flex flex-col gap-1 items-start leading-normal w-full" data-node-id="72:288">
+            <p class="text-black font-semibold text-xl md:text-2xl w-full" data-node-id="72:289">Bima Jatmiko A.</p>
             <p class="text-textbody text-lg md:text-xl w-full" data-node-id="72:290">Chief Marketing Officer</p>
           </div>
         </div>
@@ -162,11 +201,8 @@
               class="absolute border border-primary-50 border-solid inset-0 pointer-events-none rounded-[32px]"
             ></div>
           </div>
-          <div
-            class="flex flex-col font-sans font-semibold gap-1 items-start leading-normal w-full"
-            data-node-id="72:294"
-          >
-            <p class="text-black text-xl md:text-2xl w-full" data-node-id="72:295">M. Faris Arkaan</p>
+          <div class="flex flex-col gap-1 items-start leading-normal w-full" data-node-id="72:294">
+            <p class="text-black font-semibold text-xl md:text-2xl w-full" data-node-id="72:295">M. Faris Arkaan</p>
             <p class="text-textbody text-lg md:text-xl w-full" data-node-id="72:296">Head of Chef</p>
           </div>
         </div>
@@ -174,54 +210,50 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-primary-50 grid grid-cols-4 gap-12 p-20 h-[398px]" data-node-id="70:248">
-      <div class="col-span-2 flex flex-col gap-6 items-start" data-node-id="70:249">
-        <p class="font-logo text-primary-400 text-[36px] leading-none tracking-wider" data-node-id="70:250">
-          ENDORPHINS
-        </p>
-        <p class="font-sans text-base leading-normal text-textbody w-[437px]" data-node-id="70:251">
+    <footer class="bg-primary-50 grid md:grid-cols-4 gap-12 px-4 py-12 md:px-8 lg:px-20 lg:py-20 min-h-[398px]">
+      <div class="md:col-span-4 lg:col-span-2 flex flex-col gap-6 items-start">
+        <h3 class="font-logo text-primary-400 text-4xl leading-none tracking-wider">ENDORPHINS</h3>
+        <p class="font-sans text-base leading-normal text-textbody">
           Dibuat dengan cinta dan bahan-bahan pilihan, pelukan hangat yang siap mencerahkan harimu.
         </p>
-        <div class="flex flex-col gap-3 items-start justify-center w-full" data-node-id="70:252">
-          <div class="flex gap-3 items-center" data-name="Location" data-node-id="70:253">
-            <img src="./images/mappin.png" alt="location" class="w-5 h-5" data-node-id="70:254" />
-            <p class="font-sans text-base leading-normal text-textbody" data-node-id="70:258">
-              Jln. Sudirman No. 138, Jakarta Pusat.
-            </p>
+        <div class="flex flex-col gap-3 items-start justify-center w-full">
+          <div class="flex gap-3 items-center" data-name="Location">
+            <img
+              src="/.netlify/images?fm=webp&url=/images/mappin.png?nf_resize=fit&w=20"
+              alt="location"
+              class="w-5 h-5"
+            />
+            <p class="font-sans text-base leading-normal text-textbody">Jln. Sudirman No. 138, Jakarta Pusat.</p>
           </div>
-          <div class="flex gap-3 items-center" data-name="Phone" data-node-id="70:259">
-            <img src="./images/phone.png" alt="phone" class="w-5 h-5" data-node-id="70:260" />
-            <p class="font-sans text-base leading-normal text-textbody" data-node-id="70:263">Phone: (021) 123-4567</p>
+          <div class="flex gap-3 items-center" data-name="Phone">
+            <img src="/.netlify/images?fm=webp&url=/images/phone.png?nf_resize=fit&w=20" alt="phone" class="w-5 h-5" />
+            <p class="font-sans text-base leading-normal text-textbody">Phone: (021) 123-4567</p>
           </div>
-          <div class="flex gap-2 items-center" data-name="Email" data-node-id="70:264">
-            <img src="./images/envelopesimple.png" alt="email" class="w-5 h-5" data-node-id="70:265" />
-            <p class="font-sans text-base leading-normal text-textbody" data-node-id="70:269">
-              Email: hello@endorphins.id
-            </p>
+          <div class="flex gap-2 items-center" data-name="Email">
+            <img
+              src="/.netlify/images?fm=webp&url=/images/envelopesimple.png?nf_resize=fit&w=20"
+              alt="email"
+              class="w-5 h-5"
+            />
+            <p class="font-sans text-base leading-normal text-textbody">Email: hello@endorphins.id</p>
           </div>
         </div>
       </div>
-      <div class="flex flex-col gap-12 items-start" data-node-id="70:276">
-        <p class="font-sans text-[24px] font-semibold text-black text-nowrap" data-node-id="70:277">OUR STORE</p>
-        <div
-          class="flex flex-col font-sans gap-3 items-start leading-normal text-[16px] text-nowrap"
-          data-node-id="70:278"
-        >
-          <p class="text-textbody" data-node-id="70:279">Jakarta</p>
-          <p class="text-textbody" data-node-id="70:280">Bandung</p>
-          <p class="text-textbody" data-node-id="70:281">Surabaya</p>
-          <p class="text-textbody" data-node-id="70:282">Bali</p>
+      <div class="flex flex-col gap-5 md:gap-12 md:col-span-2 lg:col-span-1 items-start">
+        <h3 class="font-sans text-xl md:text-2xl font-semibold text-black">OUR STORE</h3>
+        <div class="flex flex-col gap-3 items-start leading-normal">
+          <a href="#" class="font-sans text-base leading-normal text-textbody hover:text-black"> Jakarta </a>
+          <a href="#" class="font-sans text-base leading-normal text-textbody hover:text-black"> Bandung </a>
+          <a href="#" class="font-sans text-base leading-normal text-textbody hover:text-black"> Surabaya </a>
+          <a href="#" class="font-sans text-base leading-normal text-textbody hover:text-black"> Bali </a>
         </div>
       </div>
-      <div class="flex flex-col gap-12 items-start" data-node-id="70:270">
-        <p class="font-sans text-[24px] font-semibold text-black text-nowrap" data-node-id="70:271">SOCIAL MEDIA</p>
-        <div
-          class="flex flex-col font-sans gap-3 items-start leading-normal text-[16px] text-nowrap"
-          data-node-id="70:272"
-        >
-          <p class="text-textbody" data-node-id="70:273">Instagram</p>
-          <p class="text-textbody" data-node-id="70:274">Tiktok</p>
-          <p class="text-textbody" data-node-id="70:275">Facebook</p>
+      <div class="flex flex-col gap-5 md:gap-12 md:col-span-2 lg:col-span-1 items-start">
+        <h3 class="font-sans text-xl md:text-2xl font-semibold text-black">SOCIAL MEDIA</h3>
+        <div class="flex flex-col gap-3 items-start leading-normal">
+          <a href="#" class="font-sans text-base leading-normal text-textbody hover:text-black"> Instagram </a>
+          <a href="#" class="font-sans text-base leading-normal text-textbody hover:text-black"> Tiktok </a>
+          <a href="#" class="font-sans text-base leading-normal text-textbody hover:text-black"> Facebook </a>
         </div>
       </div>
     </footer>

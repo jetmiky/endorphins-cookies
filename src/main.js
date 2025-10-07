@@ -63,6 +63,13 @@ sr.reveal("#js-hampers > div", {
   delay: 300,
 });
 
+sr.reveal("#js-members > div", {
+  origin: "bottom",
+  distance: "30px",
+  interval: 300,
+  delay: 300,
+});
+
 // Subscription form
 const subscriptionForm = document.getElementById("subscription-form");
 if (subscriptionForm) {
