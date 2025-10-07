@@ -74,29 +74,38 @@
     </aside>
 
     <!-- Header -->
-    <header class="bg-primary-50 flex items-center justify-between px-4 md:px-8 lg:px-40 py-7">
+    <header class="relative bg-primary-50 flex items-center justify-between px-4 md:px-8 lg:px-40 py-6 md:py-7 z-50">
       <div class="flex items-center justify-center">
         <a href="/" class="font-logo text-primary-400 text-4xl leading-none tracking-wider">ENDORPHINS</a>
       </div>
 
-      <!-- Mobile Menu Button -->
-      <button
-        id="mobile-menu-button"
-        class="md:hidden flex flex-col items-center justify-center w-8 h-8 space-y-1 focus:outline-none"
-        aria-label="Toggle menu"
-      >
-        <span class="block w-6 h-0.5 bg-black transition-transform duration-300"></span>
-        <span class="block w-6 h-0.5 bg-black transition-transform duration-300"></span>
-        <span class="block w-6 h-0.5 bg-black transition-transform duration-300"></span>
-      </button>
-
       <!-- Navigation Menu -->
-      <nav
-        id="nav-menu"
-        class="hidden md:flex flex-col md:flex-row gap-6 md:gap-12 font-sans font-semibold text-xl absolute md:relative top-full left-0 right-0 bg-primary-50 md:bg-transparent p-4 md:p-0 shadow-lg md:shadow-none transition-all duration-300"
-      >
-        <a href="#" class="text-black text-lg">Beranda</a>
-        <a href="./about.html" class="text-textdisabled text-lg hover:text-black"> Tentang Kami </a>
+      <nav id="nav-menu" class="flex flex-col md:flex-row gap-6 md:gap-12 p-4 md:p-0 transition-all duration-300">
+        <!-- Mobile Menu Button -->
+        <button
+          id="js-mobile-menu-button"
+          class="md:hidden flex flex-col items-end justify-center w-8 space-y-1 focus:outline-none"
+          aria-label="Toggle menu"
+        >
+          <span class="block w-6 h-1 bg-black transition-transform duration-300"></span>
+          <span class="block w-4 h-1 bg-black transition-transform duration-300"></span>
+        </button>
+
+        <div
+          class="navbar-collapse absolute top-full left-0 right-0 bg-primary-50 md:relative max-h-0 md:max-h-none overflow-hidden transition-all duration-300 ease-out"
+          id="js-nav-menu"
+        >
+          <ul
+            class="navbar-nav font-semibold text-xl list-none p-4 md:p-0 flex flex-col md:flex-row gap-4 md:gap-6 lg:gap-8"
+          >
+            <li>
+              <a href="/" class="text-black text-lg">Beranda</a>
+            </li>
+            <li>
+              <a href="#" class="text-textdisabled text-lg hover:text-black">Tentang Kami</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
 

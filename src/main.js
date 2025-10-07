@@ -1,6 +1,21 @@
 import Lenis from "lenis";
 import ScrollReveal from "scrollreveal";
 
+// Mobile Navbar
+const navToggler = document.getElementById("js-mobile-menu-button");
+if (navToggler) {
+  navToggler.addEventListener("click", function () {
+    const navbarCollapse = document.getElementById("js-nav-menu");
+    navbarCollapse.classList.toggle("show");
+
+    if (navbarCollapse.classList.contains("show")) {
+      navToggler.setAttribute("aria-expanded", "true");
+    } else {
+      navToggler.setAttribute("aria-expanded", "false");
+    }
+  });
+}
+
 // Initialize Lenis
 const lenis = new Lenis({
   autoRaf: true,
