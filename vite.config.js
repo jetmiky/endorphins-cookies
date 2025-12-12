@@ -11,7 +11,7 @@ export default defineConfig({
     tailwindcss(),
     sitemap({
       hostname: "https://endorphinscookies.netlify.app",
-      exclude: ["/google280a9c6712542421"],
+      exclude: ["/google280a9c6712542421", "/404"],
     }),
   ],
   build: {
